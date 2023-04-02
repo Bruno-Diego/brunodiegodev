@@ -1,10 +1,12 @@
-import { useState } from 'react'
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div>
-      3D Developer Portfolio
-    </div>
+    <BrowserRouter>
+      <div className='relative z-0 bg-primary'>
+        3D Developer Portfolio
+      </div>
+    </BrowserRouter>
   )
 } 
 export default App
