@@ -1,2 +1,3 @@
 import GlobeCanvas from "./Globe";
-export { GlobeCanvas };
+import StarsCanvas from "./Stars";
+export { GlobeCanvas, StarsCanvas };
