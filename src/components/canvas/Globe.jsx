@@ -22,7 +22,7 @@ const Globe = ({ isMobile }) => {
       <primitive
         object={globe.scene}
         scale={isMobile ? 20 : 35}
-        position={isMobile ? [0, -4, 0] : [0, -6.5, 0]}
+        position={isMobile ? [0, -4, 0] : [0, -7, 0]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
