@@ -7,7 +7,7 @@ import { slideIn } from "../utils/motion";
 const Hero = () => {
     
     return (
-        <section className={`relative w-full h-screen mx-auto`}>
+        <section className={`relative flex flex-column w-full h-screen mx-auto`}>
             <div
                 className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
             >
@@ -26,8 +26,8 @@ const Hero = () => {
                     </p>
                 </div>
             </div>
-            <div className={`justify-center items-center mt-5 w-full`}>
-                <motion.div variants={slideIn("up", "tween", 3, 3)} className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
+            <div className={`flex grow justify-center mt-5`}>
+                <motion.div initial="hidden" animate="show" variants={slideIn("up", "spring", 1, 5)}>
                     <GlobeCanvas />
                 </motion.div>
             </div>
