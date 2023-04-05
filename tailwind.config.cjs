@@ -21,19 +21,6 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.jpg')",
       },
-
-      // Fade in animation class
-      animation: {
-        'fade': 'fadeIn 5s ease-in-out',
-      },
-
-      // that is actual animation
-      keyframes: theme => ({
-        fadeOut: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
-        },
-      }),
     },
   },
   plugins: [],
