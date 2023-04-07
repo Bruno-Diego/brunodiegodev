@@ -44,6 +44,7 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+          echo "${{ secrets.VITE_APP_EMAILJS_PUBLIC_KEY }}"
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
