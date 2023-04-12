@@ -22,8 +22,8 @@ const Globe = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={globe.scene}
-        scale={isMobile ? 20 : 35}
-        position={isMobile ? [0, -4, 0] : [0, -7, 0]}
+        scale={isMobile ? 20 : 75}
+        position={isMobile ? [0, -2, 0] : [0, -12, 0]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
