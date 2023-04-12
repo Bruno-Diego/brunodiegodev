@@ -6,7 +6,7 @@ import { slideIn } from "../utils/motion";
 
 const Hero = () => {
     return (
-        <section className={`relative flex flex-column w-full h-screen mx-auto`}>
+        <section className={`relative flex flex-column w-full h-screen mx-auto overflow-hidden`}>
             <div
                 className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
             >
