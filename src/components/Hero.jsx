@@ -5,19 +5,6 @@ import { GlobeCanvas } from "./canvas";
 import { slideIn } from "../utils/motion";
 
 const Hero = () => {
-    let i=0, text;
-    text = "I'm Bruno"
-
-    function typing() {
-        if(i<text.length){
-            document.getElementById('header-text').innerHTML += text.charAt(i);
-            i++
-            setTimeout(typing, 200);
-        }
-    };
-    window.onload = function () {
-        typing();
-    }
     return (
         <section className={`relative flex flex-column w-full h-screen mx-auto`}>
             <div
@@ -30,7 +17,7 @@ const Hero = () => {
 
                 <div>
                     <h1 className={`${styles.heroHeadText} text-white`}>
-                        <span className="ease-in">Hi! </span><span id="header-text" onLoad={window.onload}></span>
+                        <span className="ease-in">Hi! I'm Bruno</span>
 
                     </h1>
                     <p className={`${styles.heroSubText} mt-2 text-white-100 ease-in`}>
