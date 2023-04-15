@@ -14,7 +14,7 @@ const Navbar = () => {
     py-5 fixed top-0 z-20 bg-primary`}>
       <div className="w-full flex justify-between items-center 
       max-w-7x1 mx-auto">
-        <Link to="/"
+        <Link to="/brunodiegodev/"
           className='flex items-center gap-2'
           onClick={() => {
             setActive("");
