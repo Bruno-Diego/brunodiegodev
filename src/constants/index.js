@@ -166,4 +166,17 @@ import {
     },
   ];
   
+  export const socialLinks = [
+    {
+      title: "LinkedIn",
+      url: "https://www.linkedin.com/in/bruno-diego-da-silva-151027192/",
+      icon: "fa-brands fa-linkedin fa-2xl"
+    },
+    {
+      title: "GitHub",
+      url: "https://github.com/Bruno-Diego/",
+      icon: "fa-brands fa-github fa-2xl"
+    }
+  ];
+
   export { services, experiences, testimonials, projects };
