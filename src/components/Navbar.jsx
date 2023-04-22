@@ -10,10 +10,8 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <nav className={`${styles.paddingX} w-full flex items-center 
-    py-5 fixed top-0 z-20 bg-primary`}>
-            <div className="w-full flex justify-between items-center 
-      max-w-7x1 mx-auto">
+        <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+            <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
                 <Link to="/brunodiegodev/"
                     className='flex items-center gap-2'
                     onClick={() => {
@@ -21,21 +19,22 @@ const Navbar = () => {
                         window.scrollTo(0, 0)
                     }}
                 >
-                    <p className='text-white text-[18px] font-bold 
-          cursor-pointer flex'>Bruno Diego da Silva &nbsp;
+                    <p className='text-white text-[18px] font-bold cursor-pointer flex'>Bruno Diego da Silva &nbsp;
                         <span className='sm:block hidden'>| Junior Full-Stack Developer</span>
                     </p>
                 </Link>
                 <ul className='list-none hidden sm:flex flex-row gap-10'>
-                    <li
+                    <div
                         className={`flex space-x-6 mx-auto my-auto text-white font-poppins font-medium cursor-pointer text-[18px]`}
                     >
                         {socialLinks.map((socialLink) => (
-                            <div>
-                                <a href={socialLink.url} target="_blank" rel="noopener noreferrer"><i class={socialLink.icon}></i></a>
-                            </div>
+                            <li key={socialLink.title} >
+                                <div>
+                                    <a href={socialLink.url} target="_blank" rel="noopener noreferrer"><i className={socialLink.icon}></i></a>
+                                </div>
+                            </li>
                         ))}
-                    </li>
+                    </div>
                     {navLinks.map((Link) => (
                         <li key={Link.id}
                             className={`${active === Link.title
@@ -70,15 +69,17 @@ const Navbar = () => {
                                 <a href={`#${Link.id}`}>{Link.title}</a>
                             </li>
                         ))}
-                        <li
-                            className={`flex space-x-6 mx-auto my-auto text-white font-poppins font-medium cursor-pointer text-[16px]`}
+                        <div
+                        className={`flex space-x-6 mx-auto my-auto text-white font-poppins font-medium cursor-pointer text-[18px]`}
                         >
                             {socialLinks.map((socialLink) => (
-                                <div>
-                                    <a href={socialLink.url} target="_blank" rel="noopener noreferrer"><i class={socialLink.icon}></i></a>
-                                </div>
+                                <li key={socialLink.title} >
+                                    <div>
+                                        <a href={socialLink.url} target="_blank" rel="noopener noreferrer"><i className={socialLink.icon}></i></a>
+                                    </div>
+                                </li>
                             ))}
-                        </li>
+                        </div>
                     </ul>
                 </div>
             </div>

@@ -6,6 +6,7 @@ import Experience from './Experience';
 import Works from './Works';
 import Contact from './Contact';
 import Footer from './Footer';
+import Upbutton from './Upbutton';
 
 export {
     Navbar,
@@ -17,4 +18,5 @@ export {
     Contact,
     StarsCanvas,
     Footer,
+    Upbutton,
 }
