@@ -5,12 +5,12 @@ import { GlobeCanvas } from "./canvas";
 import { slideIn } from "../utils/motion";
 
 const Hero = () => {
-    window.onload = function() {
+    const handleAcceptClick = () => {
         const cookieSection = document.querySelector(".cookieSec")
-        // // const cookieBox = document.querySelector(".wrapper");
-        const acceptBtn = document.querySelector(".button");
+        // // // const cookieBox = document.querySelector(".wrapper");
+        // const acceptBtn = document.querySelector(".button");
         
-        acceptBtn.onclick = () => {
+        // acceptBtn.onclick = () => {
         //   setting cookie for 1 month, after one month it'll be expired automatically
           document.cookie = "CookieBy=BrunoDS; max-age="+60*60*24*30;
           if(document.cookie){ //if cookie is set
@@ -18,7 +18,7 @@ const Hero = () => {
           }else{ //if cookie not set then alert an error
             alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
           }
-        }
+        // }
         let checkCookie = document.cookie.indexOf("CookieBy=BrunoDS"); //checking our cookie
         // if cookie is set then hide the cookie box else show it
         checkCookie != -1 ? cookieSection.classList.add("invisible") : cookieSection.classList.remove("invisible");
@@ -51,7 +51,7 @@ const Hero = () => {
                 <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">We use cookies to ensure that we give you the best experience on our website. <a href="https://commission.europa.eu/cookies-policy_en" className="text-blue-500 hover:underline" target="_blank">Read cookies policies</a>. </p>
                 
                 <div className="wrapper flex items-center justify-between mt-4 gap-x-4 shrink-0">
-                    <button className="button text-xs bg-gray-900 font-medium rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
+                    <button onClick={handleAcceptClick} className="button text-xs bg-gray-900 font-medium rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
                         Accept
                     </button>
                 </div>
