@@ -20,7 +20,7 @@ const Hero = () => {
                         <span className="ease-in">Hi! I'm Bruno</span>
 
                     </h1>
-                    <p className={`${styles.heroSubText} mt-2 text-white-100 ease-in`}>
+                    <p className={`${styles.heroSubText} mt-2 text-white-100 sm:text-sm ease-in`}>
                         I develop user interfaces and web applications<br className='sm:block hidden' />
                         that will give solutions to help your bussiness grow<br className='sm:block hidden' />
                         and be more present in the digital world
