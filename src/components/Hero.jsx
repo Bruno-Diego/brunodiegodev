@@ -61,7 +61,7 @@ const Hero = () => {
                     <GlobeCanvas />
                 </motion.div>
             </div>
-            <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center gap-5 z-50 px-5 py-5'>
+            <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center gap-5 z-45 px-5 py-5'>
                 {/* Make the message stand out */}
                 <a href='#about'>
                     <p className='flex flex-row justify-center items-center gap-5 mb-2'>
