@@ -5,6 +5,24 @@ import { GlobeCanvas } from "./canvas";
 import { slideIn } from "../utils/motion";
 
 const Hero = () => {
+    window.onload = function() {
+        const cookieSection = document.querySelector(".cookieSec")
+        // // const cookieBox = document.querySelector(".wrapper");
+        const acceptBtn = document.querySelector(".button");
+        
+        acceptBtn.onclick = () => {
+        //   setting cookie for 1 month, after one month it'll be expired automatically
+          document.cookie = "CookieBy=BrunoDS; max-age="+60*60*24*30;
+          if(document.cookie){ //if cookie is set
+            cookieSection.classList.add("invisible"); //hide cookie box
+          }else{ //if cookie not set then alert an error
+            alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+          }
+        }
+        let checkCookie = document.cookie.indexOf("CookieBy=BrunoDS"); //checking our cookie
+        // if cookie is set then hide the cookie box else show it
+        checkCookie != -1 ? cookieSection.classList.add("invisible") : cookieSection.classList.remove("invisible");
+    }
     return (
         <section className={`relative flex flex-column w-full h-screen mx-auto overflow-hidden`}>
             <div
