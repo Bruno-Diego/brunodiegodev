@@ -28,7 +28,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className={`flex grow justify-center overflow-hidden h-full absolute inset-x-0 top-2/4`}>
-                <motion.div initial="hidden" animate="show" variants={slideIn("up", "", 3, 6)}>
+                <motion.div initial="hidden" animate="show" variants={slideIn("up", "", 1, 6)}>
                     <GlobeCanvas />
                 </motion.div>
             </div>
