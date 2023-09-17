@@ -8,6 +8,7 @@ import {
     copacabana,
     bdcrypto,
     snakegame,
+    belinked,
   } from "../assets";
   
   export const navLinks = [
@@ -45,6 +46,19 @@ import {
   ];
   
   const experiences = [
+    {
+      title: "Web Developer and Consultant",
+      company_name: "Belinked",
+      icon: www,
+      iconBg: "#E6DEDD",
+      date: "Jul 2023 - Present",
+      points: [
+        "Guide clients to their online objectives. Trusted advisor, working closely with clients to understand their unique needs, goals, and challenges. Craft comprehensive web strategies that drive results and empower businesses to thrive in the digital age.",
+        "Develop and implement digital strategies that align with clients' business objectives. Identify growth opportunities and create roadmaps for online success.",
+        "Create and execute social media branding strategies that enhance our clients' online presence, increase engagement, and build brand loyalty.",
+        "Proficiency in web analytics tools and SEO best practices.",
+      ],
+    },
     {
       title: "Junior Full stack Developer",
       company_name: "Free lancing",
@@ -101,6 +115,27 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Belinked Web",
+      description:
+        "Web Agency focused on web development digital marketing.",
+      tags: [
+        {
+          name: "Javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "React",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Vite JS",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: belinked,
+      source_code_link: "https://belinked.website/",
+    },
     {
       name: "Copacabana Jewellery",
       description:

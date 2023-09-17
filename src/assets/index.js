@@ -13,6 +13,7 @@ import www from "./company/wwwicon.png";
 import copacabana from "./copacabana.png";
 import bdcrypto from "./bdcrypto.png";
 import snakegame from "./snakegame.png";
+import belinked from "./belinked.png";
 
 export {
   logo,
@@ -28,4 +29,5 @@ export {
   copacabana,
   bdcrypto,
   snakegame,
+  belinked,
 };
