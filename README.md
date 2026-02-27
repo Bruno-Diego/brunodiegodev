@@ -33,6 +33,6 @@ The development of this website was greatly inspired by [Javascript Matery](http
 
 I am always eager to take on new challenges and work on cutting-edge projects, and I look forward to continuing my journey in the world of software development and technology. 
 
-Thank you for visiting my portfolio, and I hope you enjoy exploring it as much as I enjoyed creating it.
+Thank you for visiting my portfolio, and I hope you enjoy exploring it as much as I enjoyed creating it!
 
 ---
